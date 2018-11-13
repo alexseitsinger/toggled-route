@@ -16,6 +16,7 @@ A react route that uses a different component based on the authentication status
 ```javascript
 import React from "react"
 import { Switch } from "react-router-dom"
+import { connect } from "react-redux"
 import ToggledRoute from "@alexseitsinger/toggled-route"
 
 import HomePage from "../pages/home"
