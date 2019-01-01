@@ -19,16 +19,8 @@ function ToggledRoute({
 ToggledRoute.propTypes = {
 	isAuthenticated: PropTypes.bool.isRequired,
 	path: PropTypes.string.isRequired,
-	authenticatedComponent: PropTypes.oneOfType([
-		PropTypes.func,
-		PropTypes.string
-		//...
-	]).isRequired,
-	anonymousComponent: PropTypes.oneOfType([
-		PropTypes.func,
-		PropTypes.string
-		//...
-	]).isRequired
+	authenticatedComponent: PropTypes.oneOfType([PropTypes.func]).isRequired,
+	anonymousComponent: PropTypes.oneOfType([PropTypes.func]).isRequired
 }
 
 export default ToggledRoute

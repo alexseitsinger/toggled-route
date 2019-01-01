@@ -24,7 +24,7 @@ function AnonymousPage() {
 	return <div className={"page"}>Anonymous Page</div>
 }
 
-describe("<ProtectedRoute/>", () => {
+describe("<ToggledRoute/>", () => {
 	it("renders authenticated page when authenticated", () => {
 		const wrapper = setup({
 			path: "/",
