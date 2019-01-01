@@ -4,7 +4,6 @@
 
 -   [ToggledRoute][1]
     -   [Parameters][2]
-    -   [Usage][3]
 
 ## ToggledRoute
 
@@ -12,43 +11,20 @@ A react route that uses a different component based on the authentication status
 
 ### Parameters
 
--   `props` **[Object][3]**
-    -   `props.isAuthenticated` **Bool** Is the user authenticated
-    -   `props.authenticatedComponent` **[Function][4]** The component to render when user is authenticated.
-    -   `props.anonymousComponent` **[Function][4]** The component to render when the user is.
-    -   `props.rest` **...[Array][5]** The rest of the arguments.
-
-### Usage
-
-```javascript
-import React from "react"
-import { Switch } from "react-router-dom"
-import { connect } from "react-redux"
-import ToggledRoute from "@alexseitsinger/toggled-route"
-
-import HomePage from "../pages/home"
-import LandingPage from "../pages/landing"
-
-const ConnectedToggledRoute = connect((state) => {
-	return {
-		isAuthenticated: state.auth.isAuthenticated
-	}
-})(ToggledRoute)
-
-export default (
-	<Switch>
-		<ConnectedToggledRoute
-			path={"/"}
-			exact
-			authenticatedComponent={HomePage}
-			anonymousComponent={LandingPage}
-		/>
-	</Switch>
-)
-```
+-   `props` **[Object][3]** 
+    -   `props.isAuthenticated` **[Boolean][4]** Is the user authenticated
+    -   `props.authenticatedComponent` **[Function][5]** The component to render when user is authenticated.
+    -   `props.anonymousComponent` **[Function][5]** The component to render when the user is.
+    -   `props.rest` **...[Array][6]** The rest of the arguments.
 
 [1]: #toggledroute
+
 [2]: #parameters
+
 [3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
-[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
-[5]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[5]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+
+[6]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array

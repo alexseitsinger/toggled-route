@@ -5,7 +5,7 @@ import { Route } from "react-router"
 /**
  * A react route that uses a different component based on the authentication status.
  * @param {Object} props
- * @param {Bool} props.isAuthenticated Is the user authenticated
+ * @param {Boolean} props.isAuthenticated Is the user authenticated
  * @param {Function} props.authenticatedComponent The component to render when user is authenticated.
  * @param {Function} props.anonymousComponent The component to render when the user is.
  * @param {...Array} props.rest The rest of the arguments.
