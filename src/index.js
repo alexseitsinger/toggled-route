@@ -26,7 +26,7 @@ import { Route } from "react-router"
  *             path={"/"}
  *             exact
  *             authenticatedComponent={HomePage}
- *             anbonymousComponent={LandingPage}
+ *             anonymousComponent={LandingPage}
  *         />
  *     </Switch>
  * )

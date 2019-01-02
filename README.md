@@ -35,7 +35,7 @@ export default (
             path={"/"}
             exact
             authenticatedComponent={HomePage}
-            anbonymousComponent={LandingPage}
+            anonymousComponent={LandingPage}
         />
     </Switch>
 )
